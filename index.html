@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My List</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="container">
+    <ul id="list"></ul>
+
+    <form id="new-todo-form">
+      <label class="title-header" for="todo-input">My List</label>
+      <input class="input-btn" type="text" id="todo-input" />
+      <button class="add-btn" type="submit">Add</button>
+    </form>
+
+    <template id="list-item-template">
+      <li class="list-item">
+        <label class="list-item-label">
+          <input type="checkbox" data-list-item-checkbox />
+          <span data-list-item-text></span>
+        </label>
+        <button class="delete-btn" data-button-delete>Delete</button>
+      </li>
+    </template>
+  </body>
+</html>

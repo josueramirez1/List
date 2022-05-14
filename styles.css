@@ -1,0 +1,72 @@
+* {
+  font-family: "Radio Canada", sans-serif;
+}
+
+#new-todo-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#new-todo-form > * {
+  margin: 0.15rem;
+}
+
+#list {
+  padding: 0;
+  text-align: left;
+}
+
+.list-item {
+  list-style: none;
+}
+
+.list-item-label:hover,
+[data-list-item-checkbox]:hover {
+  cursor: pointer;
+}
+
+.list-item-label:hover > [data-list-item-text] {
+  color: #333;
+  text-decoration: line-through;
+}
+
+[data-list-item-checkbox]:checked ~ [data-list-item-text] {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+[data-button-delete] {
+  margin-left: 0.5rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 650px;
+  width: auto;
+  background-image: url(jan-kahanek-g3O5ZtRk2E4-unsplash.jpg);
+  background-size: cover;
+}
+
+.title-header {
+  font-size: 2em;
+  font-weight: 1000;
+}
+
+.add-btn,
+.input-btn {
+  border: #aaa;
+}
+
+.add-btn:hover,
+.input-btn:hover {
+  background-color: beige;
+}
